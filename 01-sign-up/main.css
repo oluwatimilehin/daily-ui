@@ -1,5 +1,88 @@
+
 body{
-background: #1D4350; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #1D4350 , #A43931); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #1D4350 , #A43931); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: flex;
+justify-content: center;
+align-items: center;
+background: #4B79A1; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: aliceblue;
+}
+body, html{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h2, button, div{
+    padding: 0;margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 480px;
+    box-shadow: 0 0 250px #000;
+}
+.container .hero-icon{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 60px;
+}
+.container .hero-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-box{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-element{
+    width: 350px;
+    height: 45px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.form-element>.form-addon{
+    position: relative;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.form-element > .form-field{
+    flex: 1;
+    color: aliceblue;
+    font-size: 1em;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid aliceblue;
+    text-align: center;
+}
+.form-element.button-container{
+    display: flex;
+    justify-content: center;
+    padding-left: 3px;
+}
+.form-element.button-container> .button{
+    flex: 0.5;
+    color: aliceblue;
+    font-size: 1em;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid aliceblue;
+    text-align: center;
+}
+.form-element.button-container> .button:hover{
+    background: aliceblue;
+    color: #4B79A1;
+}
+
+.form-element > .form-field:focus{
+    outline: none;
 }
